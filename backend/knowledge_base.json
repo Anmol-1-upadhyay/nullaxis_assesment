@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "category": "General Troubleshooting",
+        "issue": "UI not loading",
+        "solution": "Check browser console for JS errors. Ensure React dev server is running on the correct port (default: localhost:3000)."
+    },
+    {
+        "id": 2,
+        "category": "General Troubleshooting",
+        "issue": "API not responding",
+        "solution": "Verify FastAPI backend is running (uvicorn main:app --reload) and check CORS settings."
+    },
+    {
+        "id": 3,
+        "category": "General Troubleshooting",
+        "issue": "CORS Error in Browser",
+        "solution": "Add CORS middleware in FastAPI."
+    },
+    {
+        "id": 4,
+        "category": "General Troubleshooting",
+        "issue": "No response generated",
+        "solution": "Ensure the agent has internet access or the local LLM model is correctly initialized."
+    },
+    {
+        "id": 5,
+        "category": "General Troubleshooting",
+        "issue": "Escalation logic not working",
+        "solution": "Check that failure conditions (e.g., empty KB search, negative sentiment) are handled in your code."
+    },
+    {
+        "id": 6,
+        "category": "AI & Intent Classification",
+        "issue": "How is intent classified?",
+        "solution": "A keyword-based or ML classifier tags messages as 'Technical Support', 'Feature Request', or 'Sales Lead'."
+    },
+    {
+        "id": 7,
+        "category": "AI & Intent Classification",
+        "issue": "How to add a new intent type?",
+        "solution": "Update the classifier logic and retrain if ML-based. Extend response handling and UI conditionally."
+    },
+    {
+        "id": 8,
+        "category": "AI & Intent Classification",
+        "issue": "Can the agent detect multiple intents?",
+        "solution": "Not by default. Implement multi-label classification using BERT or zero-shot classification APIs."
+    },
+    {
+        "id": 9,
+        "category": "AI & Intent Classification",
+        "issue": "Which model powers the agent?",
+        "solution": "Use OpenAI's GPT-4 or local models (e.g., HuggingFace transformers)."
+    },
+    {
+        "id": 10,
+        "category": "Knowledge Base Search",
+        "issue": "Where is the KB stored?",
+        "solution": "In a JSON, CSV, or Markdown file accessible to the backend service."
+    },
+    {
+        "id": 11,
+        "category": "Knowledge Base Search",
+        "issue": "How is the KB queried?",
+        "solution": "Use keyword match or semantic search using vector similarity (e.g., sentence-transformers and FAISS)."
+    },
+    {
+        "id": 12,
+        "category": "Knowledge Base Search",
+        "issue": "Can the KB be updated dynamically?",
+        "solution": "Yes. Ensure the backend can parse updates and re-index if semantic search is used."
+    },
+    {
+        "id": 13,
+        "category": "Feature Request Handling",
+        "issue": "Where are feature requests logged?",
+        "solution": "In a features.csv or feature_requests.json file, or a database like SQLite or Firebase."
+    },
+    {
+        "id": 14,
+        "category": "Feature Request Handling",
+        "issue": "Can users track feature requests?",
+        "solution": "Not by default. You can expose an endpoint or UI to view them."
+    },
+    {
+        "id": 15,
+        "category": "Sales Lead Processing",
+        "issue": "How is missing information gathered?",
+        "solution": "The agent prompts the user for missing fields like company name, size, etc."
+    },
+    {
+        "id": 16,
+        "category": "Sales Lead Processing",
+        "issue": "Where are leads stored?",
+        "solution": "In a CRM-like structure (CSV, database), optionally integrating Airtable or Google Sheets."
+    },
+    {
+        "id": 17,
+        "category": "Backend/API Setup",
+        "issue": "FastAPI app not starting",
+        "solution": "Make sure dependencies are installed and the entry point is correctly defined."
+    },
+    {
+        "id": 18,
+        "category": "Backend/API Setup",
+        "issue": "How to serve React frontend with FastAPI?",
+        "solution": "Use StaticFiles from fastapi.staticfiles and serve the built React app."
+    },
+    {
+        "id": 19,
+        "category": "Deployment",
+        "issue": "Can this be deployed on Heroku?",
+        "solution": "Yes. Add Procfile, requirements.txt, and set buildpacks for Node.js and Python."
+    },
+    {
+        "id": 20,
+        "category": "Deployment",
+        "issue": "Recommended free hosting options?",
+        "solution": "Heroku, Vercel (frontend), and Render or Railway (backend)."
+    }
+]
