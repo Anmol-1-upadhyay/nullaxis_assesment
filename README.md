@@ -46,64 +46,69 @@ git clone https://github.com/your-repo/customer-support-bot.git
 cd customer-support-bot
 ```
 
-2. Backend Setup (FastAPI)
-Prerequisites
-Python 3.10+
+## 🚀 2. Backend Setup (FastAPI)
 
-pip available
+### ✅ Prerequisites
 
-Installation
-bash
-Copy
-Edit
+- Python `3.10+`
+- pip (Python package installer)
+
+### 🛠️ Installation
+
+```bash
 cd backend
 python -m venv venv
+```
+Activate virtual environment:
 
-# Activate virtual environment
-source venv/bin/activate        # macOS/Linux
-venv\Scripts\activate           # Windows
+```bash
+venv\Scripts\activate
+```
 
-# Install backend dependencies
+Install backend dependencies:
+```bash
 pip install -r ../requirements.txt
-Environment Variables
-Create a .env file inside /backend/:
+```
 
-env
-Copy
-Edit
+create a .env inside backend
+```bash
 GROQ_API_KEY=your_groq_api_key
-CHROMA_DB_PATH=./chroma_db
-Run Backend
-bash
-Copy
-Edit
+```
+▶️ Run Backend Server
+```bash
 uvicorn main:app --reload
-API base: http://localhost:8000
+```
+API Base URL: http://localhost:8000
 
-Swagger Docs: http://localhost:8000/docs
 
-3. Frontend Setup (React.js)
-Prerequisites
-Node.js 18+
+##🌐 3. Frontend Setup (React.js)
+### ✅ Prerequisites
+Node.js 18.x
+npm 9.x
 
-npm 9+
-
-Installation
-bash
-Copy
-Edit
+##🛠️ Installation
+```bash
 cd ../frontend
 npm install
-API Configuration
-Create or update src/config.js:
+```
 
-js
-Copy
-Edit
+Create or edit src/config.js:
+
+```bash
 export const API_BASE_URL = 'http://localhost:8000';
-Run Frontend
-bash
-Copy
-Edit
+```
+##Run frontend
+```bash
 npm start
-Access frontend: http://localhost:3000
+```
+
+Frontend Access URL: http://localhost:3000
+
+yaml
+Copy code
+
+
+
+
+
+
