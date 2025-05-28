@@ -13,6 +13,7 @@ An AI-powered chatbot that classifies user queries as **Technical Support**, **F
 - 📝 Logging to:
   - `features.txt`
   - `sales_req.txt`
+  - `escalations.txt`
 - 🚨 Escalation logic for failed KB matches or complex sales
 
 ---
